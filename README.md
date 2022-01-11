@@ -1,9 +1,11 @@
 Spring-boot listener’s @autowire is not work on recent versions
 ---------------------------
 When using 2.3.1.RELASE of Spring-boot every thing is ok. 
+
 @WebListener
 public class Listener implements ServletContextListener {
-    @Autowired
+
+ @Autowired
     private Environment env;
 
 @Override
@@ -13,3 +15,19 @@ public void contextInitialized(ServletContextEvent sce) {
 
 -----------------------------
 When using 2.6.2 of Spring-boot the env will be null
+
+
+
+change  pom.xml
+
+
+      <parent>
+
+        <groupId>org.springframework.boot</groupId>    
+       
+        <artifactId>spring-boot-starter-parent</artifactId>
+        
+        <version>2.3.1.RELEASE</version><!-- ********************* 2.3.1.RELEASE - 2.6.2 ********************* -->
+       
+        <relativePath/>
+     </parent>
