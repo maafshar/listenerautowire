@@ -10,7 +10,7 @@ public class Listener implements ServletContextListener {
 
 @Override
 public void contextInitialized(ServletContextEvent sce) {
-    try {
+
         if (env == null) // is false
 
 ---------
