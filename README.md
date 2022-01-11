@@ -1,6 +1,6 @@
 Spring-boot listener’s @autowire is not work on recent versions
 ---------------------------
-When using 2.3.1.RELASE of Spring-boot every thing is ok. 
+When using 2.3.1.RELEASE of Spring-boot everything is ok.
 
 @WebListener
 public class Listener implements ServletContextListener {
