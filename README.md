@@ -13,10 +13,10 @@ public void contextInitialized(ServletContextEvent sce) {
     try {
         if (env == null) // is false
 
------------------------------
+---------
 When using 2.6.2 of Spring-boot the env will be null
 
-
+-----------------------------
 
 change  pom.xml
 
